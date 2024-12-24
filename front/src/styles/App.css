@@ -1,0 +1,36 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Loại bỏ padding-top mặc định */
+main {
+  flex: 1;
+  margin-top: 60px; /* Bằng với chiều cao của navbar */
+}
+
+/* Loại bỏ khoảng trắng cho trang Menu và Booking */
+.menu-page,
+.booking-page {
+  margin-top: -60px; /* Bù trừ margin-top của main */
+}
+
+/* Reset các styles mặc định */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} 

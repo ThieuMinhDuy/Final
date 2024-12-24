@@ -1,0 +1,134 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../assets/images/restaurant-bg.jpg') center/cover no-repeat;
+  padding: 20px;
+}
+
+.auth-paper {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-title {
+  font-size: 2rem !important;
+  margin-bottom: 30px !important;
+  color: #333;
+  font-weight: 700 !important;
+  text-align: center;
+}
+
+.auth-form {
+  width: 100%;
+}
+
+.auth-input {
+  margin-bottom: 20px !important;
+}
+
+.auth-input .MuiOutlinedInput-root {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.auth-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #2196f3;
+}
+
+.auth-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+  border-width: 2px;
+}
+
+.auth-input .MuiInputLabel-root {
+  color: #666;
+}
+
+.auth-input .MuiInputLabel-root.Mui-focused {
+  color: #1976d2;
+}
+
+.auth-submit {
+  margin: 30px 0 20px !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 1.1rem !important;
+  background-color: #1976d2 !important;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3) !important;
+}
+
+.auth-submit:hover {
+  background-color: #1565c0 !important;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4) !important;
+}
+
+.auth-error {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  color: #d32f2f;
+  font-size: 0.95rem;
+  text-align: center;
+  border: 1px solid rgba(211, 47, 47, 0.2);
+}
+
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-link {
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 15px;
+  }
+
+  .auth-paper {
+    padding: 30px 20px;
+  }
+
+  .auth-title {
+    font-size: 1.75rem !important;
+    margin-bottom: 25px !important;
+  }
+
+  .auth-input {
+    margin-bottom: 15px !important;
+  }
+
+  .auth-submit {
+    margin: 25px 0 15px !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+  }
+} 

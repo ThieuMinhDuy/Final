@@ -1,0 +1,137 @@
+.my-bookings-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 80px auto 0;
+}
+
+.my-bookings-container h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.bookings-table {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.booking-row {
+  transition: background-color 0.2s;
+}
+
+.booking-row:hover {
+  background-color: #f8f9fa;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.price-column {
+  font-weight: 500;
+}
+
+.deposit {
+  font-size: 0.9rem;
+  color: #28a745;
+  margin-top: 0.3rem;
+}
+
+.btn-cancel {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dc3545;
+  background: transparent;
+  color: #dc3545;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.items-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.items-count {
+  color: #0066cc;
+  text-decoration: underline dotted;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 10;
+}
+
+.items-tooltip:hover .tooltip-content {
+  display: block;
+}
+
+.tooltip-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tooltip-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .my-bookings-container {
+    padding: 1rem;
+  }
+  
+  .bookings-table {
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+} 
